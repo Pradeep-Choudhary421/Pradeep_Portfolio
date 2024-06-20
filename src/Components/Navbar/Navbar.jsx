@@ -62,7 +62,7 @@ const Navbar = () => {
         {/* Mobile screen */}
         <div
           className={`transition-max-height duration-500 ease-in-out ${
-            ham ? " max-h-69" : "max-h-0"
+            ham ? " max-h-96" : "max-h-0"
           } overflow-hidden md:hidden`}
         >
           <div className="grid grid-cols-1 mx-8 sm:mx-16 py-[28px] bg-gray-300 rounded-b-[1rem] px-4 bg-opacity-10 text-white text-[24px]">
