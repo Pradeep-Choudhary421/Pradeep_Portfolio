@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { Link } from "react-router-dom";
 import logo from '../../assets/Logo1.png'
 const Navbar = () => {
   const [ham, setHam] = useState(false);
@@ -39,11 +38,11 @@ const Navbar = () => {
                     Projects
                   </li>
                 </AnchorLink>
-                <Link to="/resume">
                   <li className="cursor-pointer hover:text-[#34CEA1] duration-700">
+                    <a href="https://drive.google.com/file/d/12MM-Gs1fupFdgaIG4LAkUDQ5Nb_0QGj0/view?usp=sharing">
                     Resume
+                    </a>
                   </li>
-                </Link>
               </ul>
             </div>
             <div>
@@ -63,10 +62,10 @@ const Navbar = () => {
         {/* Mobile screen */}
         <div
           className={`transition-max-height duration-500 ease-in-out ${
-            ham ? "max-h-72" : "max-h-0"
+            ham ? " max-h-69" : "max-h-0"
           } overflow-hidden md:hidden`}
         >
-          <div className="grid grid-cols-1 mx-24 lg:mx-32 py-[28px] bg-gray-300 rounded-b-[1rem] px-4 bg-opacity-10 text-white text-[24px]">
+          <div className="grid grid-cols-1 mx-8 sm:mx-16 py-[28px] bg-gray-300 rounded-b-[1rem] px-4 bg-opacity-10 text-white text-[24px]">
             <AnchorLink href="#home">
               <div className="flex justify-center py-3 cursor-pointer">Home</div>
             </AnchorLink>
@@ -79,9 +78,10 @@ const Navbar = () => {
             <AnchorLink href="#projects">
               <div className="flex justify-center py-3 cursor-pointer">Projects</div>
             </AnchorLink>
-            <Link to="/resume">
-              <div className="flex justify-center py-3 cursor-pointer">Resume</div>
-            </Link>
+              <div className="flex justify-center py-3 cursor-pointer"><a href="https://drive.google.com/file/d/12MM-Gs1fupFdgaIG4LAkUDQ5Nb_0QGj0/view?usp=sharing">
+                    Resume
+                    </a></div>
+            
           </div>
         </div>
       </section>
