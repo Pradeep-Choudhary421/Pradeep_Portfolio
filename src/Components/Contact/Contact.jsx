@@ -45,12 +45,12 @@ const Contact = () => {
           data-aos-delay="500"
         >
           <h1 className="flex justify-left text-[48px] text-[#161616]">
-            Get In Touch
+            Get In Touch!
           </h1>
           <p className="text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            id commodi aut corporis atque consectetur neque aperiam possimus
-            assumenda tenetur ex nam nihil ullam ad magni, esse soluta debitis!
+            Whether you have a question, a project idea, or just want to say
+            hello, feel free to reach out using the contact form below. I look
+            forward to hearing from you!
           </p>
           <div className="flex justify-left py-6 ">
             <div className="w-[46px] h-[41px] bg-[#FFFFFF] rounded-[5px] flex justify-center p-2">
