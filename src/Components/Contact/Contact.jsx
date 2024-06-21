@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import {toast}  from 'react-toastify';
 import gitHub from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
 import instagram from "../../assets/instagram.svg";
@@ -20,10 +21,10 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Message Sent")
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast.err("Failed to send message!");
         }
       );
   };
