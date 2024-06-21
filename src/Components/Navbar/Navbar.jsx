@@ -12,8 +12,9 @@ const Navbar = () => {
     <>
       <section className="py-8" data-aos="fade-down" id="navbar">
         <nav className="flex justify-between mx-8 sm:mx-16 md:mx-24 lg:mx-32 py-[28px] bg-gray-300 rounded-t-[1rem] lg:rounded-[1rem] px-4 bg-opacity-10 text-white">
-          <div>
+          <div><AnchorLink href="#home">
             <img src={logo} alt="" className="ml-8"/>
+            </AnchorLink>
           </div>
           <div className="flex">
             <div>
