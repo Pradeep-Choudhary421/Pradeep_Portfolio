@@ -1,13 +1,14 @@
 import React from "react";
 import adminImg from "../../assets/project/adminDash.png"
-import carImg from "../../assets/project/carRent.png"
+import carImg from "../../assets/project/carRent.png";
+import getStyle from "../../assets/project/getStyle.png"
 const Project = () => {
   const proData = [
     {
       title: "Get-Styled",
       skills:"React.js, Tailwind CSS, Node.js, Express.js",
       description: "Create a modern e-commerce website using React and Tailwind CSS for a sleek, responsive front-end. Implement the backend with Node.js, Express, and MongoDB for robust data handling and server-side operations. This stack ensures high performance, scalability, and a seamless shopping experience for users.",
-      image: "https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=1024x1024&w=is&k=20&c=U-1aMueiJ5vYIMY-2JTwaSLOXTnoSkAzCVLk1hE6wfE=",
+      image: getStyle,
       aosDelay: "0",
       link:"https://car-rental-tau-pink.vercel.app/"
     },
@@ -54,7 +55,7 @@ const Project = () => {
                 <h2 className="font-link-rob text-3xl text-[#000000] flex justify-start">
                   {item.title}
                 </h2>
-                <p className="text-[16px] my-2 text-[#000000] flex justify-center">{item.description}</p>
+                <p className="text-[16px] h-30 md:h-[480px] lg:h-[380px] xl:h-[230px] 2xl:h-[170px] my-4  mt-2 text-[#000000] flex justify-center">{item.description}</p>
                 <p className="text-lg text-[0.9rem] text-[#000000] my-2 flex justify-start font-semibold">{item.skills}</p>
                 <div className="flex justify-start my-4">
                   <a href={item.link}>
