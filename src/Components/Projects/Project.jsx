@@ -1,26 +1,31 @@
 import React from "react";
+import adminImg from "../../assets/project/adminDash.png"
+import carImg from "../../assets/project/carRent.png"
 const Project = () => {
   const proData = [
     {
-      title: "Project1",
-      skills:"HTML, CSS, React",
-      description: "This is a project This is a project This is a project This is a project This is a project This is a project This is a project ",
+      title: "Get-Styled",
+      skills:"React.js, Tailwind CSS, Node.js, Express.js",
+      description: "Create a modern e-commerce website using React and Tailwind CSS for a sleek, responsive front-end. Implement the backend with Node.js, Express, and MongoDB for robust data handling and server-side operations. This stack ensures high performance, scalability, and a seamless shopping experience for users.",
       image: "https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=1024x1024&w=is&k=20&c=U-1aMueiJ5vYIMY-2JTwaSLOXTnoSkAzCVLk1hE6wfE=",
       aosDelay: "0",
+      link:"https://car-rental-tau-pink.vercel.app/"
     },
     {
-      title: "Project2",
-      skills:"HTML, CSS, React",
-      description: "This is a project This is a project This is a project This is a project This is a project This is a project This is a project ",
-      image: "https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=1024x1024&w=is&k=20&c=U-1aMueiJ5vYIMY-2JTwaSLOXTnoSkAzCVLk1hE6wfE=",
+      title: "Admin-Dashboard",
+      skills:"React.js, Bootstrap",
+      description: "The admin dashboard UI website, built with React and Bootstrap, offers a sleek interface for managing data and operations. It features user management, analytics, and customizable widgets, ensuring efficient and user-friendly administration.",
+      image: adminImg,
       aosDelay: "400",
+      link:"https://admin-dashboard-puce-omega.vercel.app/"
     },
     {
-      title: "Project3",
-      skills:"HTML, CSS, React",
-      description: "This is a project This is a project This is a project This is a project This is a project This is a project This is a project ",
-      image: "https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=1024x1024&w=is&k=20&c=U-1aMueiJ5vYIMY-2JTwaSLOXTnoSkAzCVLk1hE6wfE=",
+      title: "Car-Rental",
+      skills:"React.js, Tailwind CSS",
+      description: "This webpage is devloped  using React for dynamic user interactions, Tailwind CSS for responsive and modern styling, and AOS (Animate On Scroll) for engaging animations. ",
+      image: carImg,
       aosDelay: "800",
+      link:"https://car-rental-tau-pink.vercel.app/"
     },
   ];
 
@@ -40,21 +45,23 @@ const Project = () => {
             >
               <div className="rounded-[6px] overflow-hidden flex justify-center mb-2  w-12/12">
                 <img
-                  className=" h-fit rounded-[6px]"
+                  className=" h-60 rounded-[6px]"
                   src={item.image}
                   alt={item.title}
                 />
               </div>
               <div className="my-auto content-center items-start px-4">
-                <h2 className="font-link-rob text-4xl text-[#000000] flex justify-start">
+                <h2 className="font-link-rob text-3xl text-[#000000] flex justify-start">
                   {item.title}
                 </h2>
                 <p className="text-[16px] my-2 text-[#000000] flex justify-center">{item.description}</p>
                 <p className="text-lg text-[0.9rem] text-[#000000] my-2 flex justify-start font-semibold">{item.skills}</p>
                 <div className="flex justify-start my-4">
+                  <a href={item.link}>
                   <button className="font-link-rob hover:scale-125 duration-300 bg-[#34CEA1] py-1 px-4 rounded-[8px] text-[1.3em] text-white cursor-pointer content-center">
                     Visit
                   </button>
+                  </a>
                 </div>
               </div>
             </div>
