@@ -10,7 +10,7 @@ const Project = () => {
       description: "Create a modern e-commerce website using React and Tailwind CSS for a sleek, responsive front-end. Implement the backend with Node.js, Express, and MongoDB for robust data handling and server-side operations. This stack ensures high performance, scalability, and a seamless shopping experience for users.",
       image: getStyle,
       aosDelay: "0",
-      link:"https://get-styled.vercel.app/"
+      link:"https://github.com/Pradeep-Choudhary421/Get-Styled-Backend"
     },
     {
       title: "Admin-Dashboard",
